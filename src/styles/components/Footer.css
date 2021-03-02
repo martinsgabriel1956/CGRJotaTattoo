@@ -1,0 +1,17 @@
+footer{
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  padding: 14px;
+
+  background-color: #111;
+  filter: opacity(75%);
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.creators {
+  margin-top: 20px;
+}

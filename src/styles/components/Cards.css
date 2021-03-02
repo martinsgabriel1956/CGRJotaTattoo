@@ -1,0 +1,18 @@
+figure {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+figure img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px 10px 0 0;
+}
+
+figcaption {
+  font-size: 24px;
+  text-align: center;
+  padding: 14px;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--primary)
+}

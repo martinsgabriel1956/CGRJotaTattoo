@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 48px;
+  width: 100%;
+}
+
+.header-link a {
+  position: relative;
+}
+
+.header-link a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--border-color);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.header-link a:hover::after {
+  width: 100%;
+  transition: width 400ms ease-in-out;
+}
+
+.header-link a:first-child {
+  margin-right: 12px;
+  position: relative;
+}
