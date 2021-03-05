@@ -1,0 +1,28 @@
+.better-jobs {
+  margin: 32px 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.better-jobs h2 {
+  margin-bottom: 8px;
+}
+
+.cards figure {
+  padding: -20px;
+  width: 325px;
+}
+
+.cards figure:first-child() {
+  background-color: red;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+}

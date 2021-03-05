@@ -1,9 +1,12 @@
 button {
   border: 1px solid var(--border-color);
-  padding: 10px;
+  padding: 16px;
   background: none;
   color: var(--text-white);
   border-radius: 4px;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 button:hover {
@@ -11,4 +14,14 @@ button:hover {
   color: var(--bg);
   padding: 12px;
   transition: all 0.7s;
+}
+
+button:last-child{
+  background: var(--border-color);
+  color: var(--bg);
+}
+
+button:last-child:hover{
+  background: none;
+  color: var(--text-white);
 }

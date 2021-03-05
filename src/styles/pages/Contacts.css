@@ -1,0 +1,76 @@
+.appointment {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.appointment-form {
+  background: #f3f2f4;
+  border-radius: 6px;
+  box-shadow: 2px 2px 40px var(--headerColor);
+  margin-top: 32px;
+  width: 40%;
+  margin-bottom: 18px;
+  
+}
+
+.appointment-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+}
+
+.appointment-form form label {
+  margin: 8px 0 4px;
+  font-size: 18px;
+}
+
+.appointment-form form input {
+  padding: 10px;
+}
+
+.appointment-form form input,
+.appointment-form form textarea {
+  margin-right: 45px;
+}
+
+.appointment-form form button {
+  width: 220px;
+  margin-left: 190px;
+  color: var(--primary);
+  background: var(--border-color);
+  cursor: pointer;
+}
+
+.appointment-form form button:hover {
+  padding: 12px;
+  background: none;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+  outline-color: var(--headerColor);
+}
+
+.appointment-form form input,
+.appointment-form form textarea {
+  border-radius: 6px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+}
+
+.appointment-form form textarea {
+  resize: none;
+  height: 140px;
+  margin-bottom: 16px;
+}
+
+.appointment-form form textarea:focus,
+.appointment-form form input:focus {
+  outline-color: var(--headerColor);
+}
+
+.appointment-form form textarea::placeholder,
+.appointment-form form input::placeholder{
+  font-size: 18px;
+  text-align: start;
+}
+

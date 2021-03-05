@@ -1,18 +1,22 @@
 figure {
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 2px 2px 40px var(--headerColor);
+  margin: 10px;
 }
 
 figure img {
-  width: 300px;
-  height: 400px;
+  width: 322px;
+  height: 404px;
   border-radius: 10px 10px 0 0;
 }
 
 figcaption {
   font-size: 24px;
   text-align: center;
-  padding: 14px;
+  padding: 16px;
   border-radius: 0 0 10px 10px;
-  background-color: var(--primary)
-}
+  background-color: var(--primary);
+  color: var(--text-white);
+} 
+

@@ -8,26 +8,14 @@ import Facebook from '../../assets/facebook.svg';
 function Footer() {
   return (
     <footer>
-      <section className="footer-link">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contacts">Contacts</Link>
-      </section>
-      <section className="link-contacts">
-        <p>
-          <Link to="#" title="Whatsapp"><img src={WhatsLogo} alt="Whatsapp"/></Link>
-        </p>
-        <p>
-          <Link to="#" title="Instagram"><img src={Instagram} alt="Instagram"/></Link>
-        </p>
-        <p>
-          <Link to="#" title="Facebook"><img src={Facebook} alt="Facebook"/></Link>
-        </p>
-      </section>
-
       <div className="creators">
-        <p>Criado por Gabriel Martins e Rafael Bertolano</p>
+        <p>&copy;<a href="https://www.instagram.com/martinsgabriel99">Gabriel Martins</a> &amp; <a href="https://www.instagram.com/rafaelbertolano/">Rafael Bertolano</a></p>
       </div>
+      <section className="link-contacts">
+          <Link to="#" title="Whatsapp"><img src={WhatsLogo} alt="Whatsapp"/>Whatsapp</Link>
+          <Link to="#" title="Instagram"><img src={Instagram} alt="Instagram"/>Instagram</Link>
+          <Link to="#" title="Facebook"><img src={Facebook} alt="Facebook"/>Facebook</Link>
+      </section>
     </footer>
   );
 }

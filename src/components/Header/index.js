@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom';
 import '../../styles/components/Header.css';
 
+import Instagram from '../../assets/instagram.svg';
+import Facebook from '../../assets/facebook.svg';
+
 function Header() {
   return (
     <header>
       <div id="logo">
         <Link to="/">CGRJOTATTOO</Link>
       </div>
-      <div className="header-link">
-        <Link to="/about">About</Link>
-        <Link to="/contacts">Contacts</Link>
+      <div className="social-links">
+          <Link to="#" title="Instagram"><img src={Instagram} alt="Instagram"/></Link>
+          <Link to="#" title="Facebook"><img src={Facebook} alt="Facebook"/></Link>
       </div>
     </header>
   );

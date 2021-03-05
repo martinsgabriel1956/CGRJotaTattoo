@@ -1,32 +1,50 @@
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  padding: 48px;
-  width: 100%;
+  justify-content: space-between;
+  padding: 50px;
 }
 
-.header-link a {
+#logo {
   position: relative;
+  font-size: 18px;
 }
 
-.header-link a::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: var(--border-color);
-  position: absolute;
-  left: 0;
-  bottom: -4px;
+.social-links {
+  align-items: center;
 }
 
-.header-link a:hover::after {
-  width: 100%;
-  transition: width 400ms ease-in-out;
+
+.social-links a img:first-child {
+  background: transparent;
 }
 
-.header-link a:first-child {
-  margin-right: 12px;
-  position: relative;
+.social-links a img:nth-child(1) {
+  transition: all 0.5s;
+}
+
+.social-links a img:nth-child(1):hover {
+  opacity: 70%;
+}
+
+.social-links a:first-child img:nth-child(1) {
+  background: linear-gradient(-45deg, rgba(249, 237, 50, 1) 0%, rgba(248, 216, 58, 1) 0%, rgba(238, 42, 123, 1) 41%, rgba(0, 42, 255, 1) 100%);
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.social-links a:last-child img:nth-child(1) {
+  background: #2D88FF;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.social-links a:first-child {
+  margin-right: 16px;
+}
+
+@media (max-width: 425px) {
+  .social-links {
+    display: none;
+  }
 }
