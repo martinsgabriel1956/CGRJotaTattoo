@@ -3,6 +3,14 @@ figure {
   width: 100%;
   box-shadow: 0.12rem 0.12rem 2.5rem var(--headerColor);
   margin: .62rem;
+  cursor: pointer;
+  opacity: 1;
+}
+
+figure:hover {
+  opacity: 0.9;
+  transition: all 0.7s;
+  box-shadow: 0.12rem 0.12rem 4rem var(--text-white);
 }
 
 figure img {

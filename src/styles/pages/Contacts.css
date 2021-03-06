@@ -98,7 +98,27 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (width: 768px) {
+  .appointment-form {
+    width: 100%;
+    margin: 0 72px 125px;
+  }
+
+  .appointment-form form input,
+  .appointment-form form textarea {
+    margin-right: 0;
+  }
+
+  .appointment-form form textarea {
+    height: 100px;
+  }
+
+  .appointment-form form button {
+    margin-left: 175px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
   .appointment-form {
     width: 50%;
     /* margin: 0 24px 260px 18px; */
@@ -115,7 +135,7 @@
   }
 
   .appointment-form form textarea {
-    height: 90px
+    height: 90px;
   }
 
   .appointment-form form input {
