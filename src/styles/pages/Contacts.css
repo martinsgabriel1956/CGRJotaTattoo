@@ -1,23 +1,21 @@
 .appointment {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 
 .appointment-form {
   background: #f3f2f4;
   border-radius: .37rem;
   box-shadow: .12rem .12rem 2.5rem var(--headerColor);
-  margin-top: 2rem;
   width: 40%;
-  margin-bottom: 2.2rem;
-
+  margin-bottom: 10rem;
 }
 
 .appointment-form form {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.75rem;
 }
 
 .appointment-form form label {
@@ -36,7 +34,7 @@
 
 .appointment-form form button {
   width: 220px;
-  margin-left: 190px;
+  margin-left: 125px;
   color: var(--primary);
   background: var(--border-color);
   cursor: pointer;
@@ -102,7 +100,7 @@
 
   @media (width: 768px) {
     .appointment-form {
-      width: 100%;
+      width: 80%;
     }
   }
 }
