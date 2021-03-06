@@ -54,3 +54,23 @@ p:nth-child(3) {
   } 
   
 }
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .resume-me {
+    margin-top: 0.75rem;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+    line-height: 2.5em;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+  
+ 
+  p:nth-child(3) {
+    padding: 0 6rem;
+  }
+}

@@ -1,88 +1,107 @@
-.appointment {
-  display: flex;
-  align-items: center;
-  width: 90%;
-}
-
-.appointment-form {
-  background: #f3f2f4;
-  border-radius: .37rem;
-  box-shadow: .12rem .12rem 2.5rem var(--headerColor);
-  width: 40%;
-  margin-bottom: 10rem;
-}
-
-.appointment-form form {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 1.75rem;
-}
-
-.appointment-form form label {
-  margin: .5rem 0 .25rem;
-  font-size: 1.1rem;
-}
-
-.appointment-form form input {
-  padding: .62rem;
-}
-
-.appointment-form form input,
-.appointment-form form textarea {
-  margin-right: 2.81rem;
-}
-
-.appointment-form form button {
-  width: 220px;
-  margin-left: 125px;
-  color: var(--primary);
-  background: var(--border-color);
-  cursor: pointer;
-}
-
-.appointment-form form button:hover {
-  padding: 1rem;
-  background: var(--bg);
-  border: none;
-  box-shadow: 0.06rem 0.06rem .31rem rgba(0, 0, 0, .4);
-  outline-color: var(--headerColor);
-  color: var(--text-white);
-  transition: all .7s;
-}
-
-.appointment-form form input,
-.appointment-form form textarea {
-  border-radius: .37rem;
-  border: none;
-  box-shadow: 0.06rem 0.06rem .31rem rgba(0, 0, 0, .3);
-}
-
-.appointment-form form textarea {
-  resize: none;
-  height: 140px;
-  margin-bottom: 1rem;
-}
-
-.appointment-form form textarea:focus,
-.appointment-form form input:focus {
-  outline-color: var(--headerColor);
-}
-
-.appointment-form form textarea::placeholder,
-.appointment-form form input::placeholder {
-  font-size: 1.1rem;
-  text-align: start;
-}
+  .appointment {
+    display: flex;
+    align-items: center;
+  }
+  
+  .appointment-form {
+    background: #f3f2f4;
+    border-radius: .37rem;
+    box-shadow: .12rem .12rem 2.5rem var(--headerColor);
+    width: 40%;
+    margin-bottom: 10rem;
+  }
+  
+  .appointment-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.75rem;
+  }
+  
+  .appointment-form form label {
+    margin: .5rem 0 .25rem;
+    font-size: 1.1rem;
+  }
+  
+  .appointment-form form input {
+    padding: .62rem;
+  }
+  
+  .appointment-form form input,
+  .appointment-form form textarea {
+    margin-right: 2.81rem;
+  }
+  
+  .appointment-form form button {
+    width: 220px;
+    margin-left: 125px;
+    color: var(--primary);
+    background: var(--border-color);
+    cursor: pointer;
+  }
+  
+  .appointment-form form button:hover {
+    background: var(--bg);
+    border: none;
+    box-shadow: 0.06rem 0.06rem .31rem rgba(0, 0, 0, .4);
+    outline-color: var(--headerColor);
+    color: var(--text-white);
+    transition: all .7s;
+  }
+  
+  .appointment-form form input,
+  .appointment-form form textarea {
+    border-radius: .37rem;
+    border: none;
+    box-shadow: 0.06rem 0.06rem .31rem rgba(0, 0, 0, .3);
+  }
+  
+  .appointment-form form textarea {
+    resize: none;
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+  
+  .appointment-form form textarea:focus,
+  .appointment-form form input:focus {
+    outline-color: var(--headerColor);
+  }
+  
+  .appointment-form form textarea::placeholder,
+  .appointment-form form input::placeholder {
+    font-size: 1.1rem;
+    text-align: start;
+  }
 
 @media (max-width: 425px) {
   .appointment-form {
     width: 100%;
     margin: 0 24px 18px 18px;
+    
   }
-
+  
   .appointment-form form button {
     width: 100%;
     margin: 0;
+  }
+  
+  .appointment-form form input,
+  .appointment-form form textarea {
+    margin-right: 0;
+  }
+  
+  .appointment-form form {
+    padding: 1.12rem;
+  }
+  
+  footer {
+    display: relative;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .appointment-form {
+    width: 50%;
+    /* margin: 0 24px 260px 18px; */
   }
 
   .appointment-form form input,
@@ -90,18 +109,25 @@
     margin-right: 0;
   }
 
-  .appointment-form form {
-    padding: 1.12rem;
+  .appointment-form form label {
+    margin: .5rem 0 .25rem;
+    font-size: 1.1rem;
   }
 
-  footer {
-    display: relative;
+  .appointment-form form textarea {
+    height: 90px
   }
 
-  @media (width: 768px) {
-    .appointment-form {
-      width: 80%;
-    }
+  .appointment-form form input {
+    padding: .5rem;
+  }
+
+  .appointment-form form button {
+    width: 150px;
+    padding: .75rem;
+    margin-left: 100px;
+    color: var(--primary);
+    background: var(--border-color);
+    cursor: pointer;
   }
 }
-

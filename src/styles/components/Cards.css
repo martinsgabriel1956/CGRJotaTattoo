@@ -35,3 +35,9 @@ figcaption {
     padding: 1.5rem;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  figure img {
+    width: 300px;
+  }
+}

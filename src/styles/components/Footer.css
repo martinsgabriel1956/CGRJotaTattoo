@@ -60,7 +60,22 @@ footer{
  footer {
    position: relative;
  }
- 
+
+ .link-contacts h4,
+ .creators p, h3 {
+  font-size: .9rem;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  footer {
+    padding: .5rem;
+  }
+
+  .link-contacts h4 {
+    font-size: 1.025rem;
+    margin-bottom: 8px;
+  }
 }
 
 

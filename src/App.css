@@ -36,6 +36,9 @@ a, p, h1, h2, h3, h4, button {
   color: var(--text-white);
 }
 
+
+
+
 @media (max-width: 425px) {
   body {
     width: 100%;
