@@ -19,6 +19,7 @@ button:hover {
 button:last-child{
   background: var(--border-color);
   color: var(--bg);
+  
 }
 
 button:last-child:hover{

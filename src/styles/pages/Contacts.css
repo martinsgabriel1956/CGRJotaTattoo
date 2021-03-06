@@ -30,7 +30,12 @@
   .appointment-form form textarea {
     margin-right: 2.81rem;
   }
-  
+
+  .appointment-form form input,
+  .appointment-form form textarea::placeholder {
+    padding: 6px;
+  }
+
   .appointment-form form button {
     width: 220px;
     margin-left: 125px;
