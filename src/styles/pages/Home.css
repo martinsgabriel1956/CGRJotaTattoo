@@ -1,59 +1,56 @@
-html {
-  background: url(../../assets/bg.jpg) no-repeat 100% ;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-}
 
-main {
-  margin-top: 64px;
+.resume-me {
+  margin-top: 4em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-section {
+h1 {
+  margin-bottom: 1.5em;
+  line-height: 2.5em;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+p:nth-child(3) {
+  padding: 0 18.75rem;
   margin-bottom: 24px;
 }
 
-.resume-me h1,
-.resume-me p {
-  margin-bottom: 8px;
-  line-height: 40px;
-  text-align: center;
-}
-
-.resume-me h1 {
-  font-size: 32px;
-}
-
-.resume-me p {
-  font-size: 20px;
-}
-
-.resume-me p:nth-child(3) {
-  padding: 0 300px;
-  margin-bottom: 16px;
-}
-
 .buttons {
-  text-align: center;
+  margin-bottom: 11.5em;
 }
 
-.buttons button {
-  cursor: pointer;
+.buttons a:nth-child(1) button {
+  margin-right: 1.2rem;
 }
 
-.buttons button:first-child {
-  margin-right: 16px;
-  margin-bottom: 32px;
+.buttons a:nth-child(2) button:hover {
+  background: #D9D9D9;
+  color: #0D0D0D;
 }
 
-footer {
-  position: fixed;
+.buttons a:nth-child(2) button {
+  background: none;
+  color: #D9D9D9;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  .resume-me {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  p:nth-child(3) {
+    padding: 0;
+  }
+  .buttons button {
+    margin-bottom: 8px;
+  } 
   
 }

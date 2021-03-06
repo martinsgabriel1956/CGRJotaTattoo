@@ -9,12 +9,14 @@ function Footer() {
   return (
     <footer>
       <div className="creators">
+        <h3>Desenvolvido por:</h3>
         <p>&copy;<a href="https://www.instagram.com/martinsgabriel99">Gabriel Martins</a> &amp; <a href="https://www.instagram.com/rafaelbertolano/">Rafael Bertolano</a></p>
       </div>
       <section className="link-contacts">
-          <Link to="#" title="Whatsapp"><img src={WhatsLogo} alt="Whatsapp"/>Whatsapp</Link>
-          <Link to="#" title="Instagram"><img src={Instagram} alt="Instagram"/>Instagram</Link>
-          <Link to="#" title="Facebook"><img src={Facebook} alt="Facebook"/>Facebook</Link>
+          <h4>Fique ligado em nossa redes sociais abaixo:</h4>
+          <Link to="#" title="Whatsapp"><img src={WhatsLogo} alt="Whatsapp"/></Link>
+          <Link to="#" title="Instagram"><img src={Instagram} alt="Instagram"/></Link>
+          <Link to="#" title="Facebook"><img src={Facebook} alt="Facebook"/></Link>
       </section>
     </footer>
   );

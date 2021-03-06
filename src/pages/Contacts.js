@@ -11,7 +11,7 @@ import "../styles/pages/Contacts.css";
 function Contacts() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [telephone, setTelephone] = useState();
+  const [telephone, setTelephone] = useState(null);
   const [message, setMessage] = useState("");
 
   function handleSubmit(e) {
@@ -30,7 +30,7 @@ function Contacts() {
 
     setName('')
     setEmail('')
-    setTelephone()
+    setTelephone(null)
     setMessage('')
   }
   return (
@@ -63,7 +63,7 @@ function Contacts() {
               id="tel" 
               placeholder="Digital seu Telefone" 
               required 
-              value={telephone}
+              value={Number(telephone)}
               onChange={e => setTelephone(e.target.value)}
               maxLength='11'
             />

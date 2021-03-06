@@ -15,14 +15,12 @@
 
 html {
   font-family: 'Akaya Kanadaka', cursive;
-  background: var(--bg);
-  width: 100%;
-  height: 100vh;
-
-  
+  background: url('./assets/bg.jpg') 50%;
+  overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-  width: 6px;
+  width: .37rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -31,10 +29,20 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background: var(--secondary);
-  
 }
 
 a, p, h1, h2, h3, h4, button {
   text-decoration: none;
   color: var(--text-white);
+}
+
+@media (max-width: 425px) {
+  body {
+    width: 100%;
+    background: none;
+  }
+
+  footer {
+    width: 100%;
+  }
 }

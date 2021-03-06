@@ -7,13 +7,12 @@ header {
 
 #logo {
   position: relative;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .social-links {
   align-items: center;
 }
-
 
 .social-links a img:first-child {
   background: transparent;
@@ -29,21 +28,25 @@ header {
 
 .social-links a:first-child img:nth-child(1) {
   background: linear-gradient(-45deg, rgba(249, 237, 50, 1) 0%, rgba(248, 216, 58, 1) 0%, rgba(238, 42, 123, 1) 41%, rgba(0, 42, 255, 1) 100%);
-  padding: 2px;
-  border-radius: 4px;
+  padding: 0.12rem;
+  border-radius: .25rem;
 }
 
 .social-links a:last-child img:nth-child(1) {
   background: #2D88FF;
-  border-radius: 4px;
-  padding: 2px;
+  border-radius: .25rem;
+  padding: 0.12rem;
 }
 
 .social-links a:first-child {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 @media (max-width: 425px) {
+  header {
+    justify-content: center;
+  }
+
   .social-links {
     display: none;
   }

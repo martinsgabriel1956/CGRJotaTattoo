@@ -1,8 +1,8 @@
 footer{
   display: grid;
   grid-template-columns: 6fr 6fr ;
-  padding: 8px;
-
+  padding: 1rem;
+  position: fixed;
   background-color: #333;
   bottom: 0;
   width: 100%;
@@ -11,34 +11,56 @@ footer{
 .footer-link {
   display: flex;
   flex-direction: column;
-  filter: opacity(none);
 }
 
-.link-contacts {
-  display: flex;
-  flex-direction: column;
+.link-contacts h4 {
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
 }
 
-.link-contacts a:first-child img:nth-child(1) {
-  background:#3DBF4F;
-  border-radius: 8px;
-  padding: 5px;
+.link-contacts a img {
+  margin-right: .5rem;
+  margin-bottom: .2rem;
+}
+
+.link-contacts a {
+  font-size: 1.1rem;
 }
 
 .link-contacts a:nth-child(2) img:nth-child(1) {
-  background:linear-gradient(-45deg, rgba(249, 237, 50, 1) 0%, rgba(248, 216, 58, 1) 0%, rgba(238, 42, 123, 1) 41%, rgba(0, 42, 255, 1) 100%);
-  border-radius: 6px;
-  padding: 5px;
+  margin-left: 1.1rem;
+  background:#3DBF4F;
+  border-radius: .37rem;
+  padding: .31rem;
 }
 
+
 .link-contacts a:nth-child(3) img:nth-child(1) {
+  background:linear-gradient(-45deg, rgba(249, 237, 50, 1) 0%, rgba(248, 216, 58, 1) 0%, rgba(238, 42, 123, 1) 41%, rgba(0, 42, 255, 1) 100%);
+  border-radius: .37rem;
+  padding: .31rem;
+}
+
+.link-contacts a:nth-child(4) img:nth-child(1) {
   background:#2D88FF;
-  border-radius: 6px;
-  padding: 5px;
+  border-radius: .37rem;
+  padding: .31rem;
 }
 
 .creators {
-  padding: 4px;
+  padding: .25rem;
   position: relative;
 }
+
+.creators h3 {
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 425px) {
+ footer {
+   position: relative;
+ }
+ 
+}
+
 
