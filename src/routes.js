@@ -1,19 +1,21 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
 
-import Home from "./pages/Home.js";
-import About from "./pages/About.js";
-import Contacts from "./pages/Contacts.js";
+import { Header } from "./components/Header";
+import { Route } from "./components/Route";
 
-function Routes() {
+import { routes } from "./utils";
+
+export const Routes = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contacts" component={Contacts} />
-      </Switch>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          {routes.map((route) => (
+            <Route key={route.path} {...route} />
+          ))}
+        </Switch>
+      </BrowserRouter>
+    </>
   );
-}
-
-export default Routes;
+};

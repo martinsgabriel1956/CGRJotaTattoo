@@ -1,8 +1,8 @@
+import { useState } from "react";
+import { db } from "../firebase";
 
-import { useState } from 'react';
-import { db } from '../firebase';
+import { InputGroup } from "../components/Form/InputGroup";
 
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 
@@ -17,56 +17,63 @@ function Contacts() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    db.collection('contacts').add ({
-      name,
-      email,
-      telephone,
-      message,
-    }).then(() => {
-      alert('Message has been submitted')
-    }).catch(err => {
-      alert(err.message)
-    })
+    db.collection("contacts")
+      .add({
+        name,
+        email,
+        telephone,
+        message,
+      })
+      .then(() => {
+        alert("Message has been submitted");
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
 
-    setName('')
-    setEmail('')
-    setTelephone(null)
-    setMessage('')
+    setName("");
+    setEmail("");
+    setTelephone(null);
+    setMessage("");
   }
   return (
     <>
-      <Header />
       <div className="appointment">
         <div className="appointment-form">
-          <form onSubmit={handleSubmit} >
-            <label htmlFor="name">Nome Completo: *</label>
-            <input 
-              type="text" 
-              id="name" 
-              placeholder="Digite seu nome" 
-              required 
+          <form onSubmit={handleSubmit}>
+            <InputGroup
+              htmlFor="name"
+              type="text"
+              id="name"
+              title="Nome Completo: *"
+              placeholder="Digite seu nome"
+              required
               value={name}
-              onChange={e => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
-            <label htmlFor="email">Email: *</label>
-            <input 
-              type="email" 
-              id="email" 
-              placeholder="Digite seu email" 
-              required 
+
+            <InputGroup
+              htmlFor="email"
+              type="email"
+              id="email"
+              title="Email: *"
+              placeholder="Digite seu email"
+              required
               value={email}
-              onChange={e => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <label htmlFor="tel">Telefone: *</label>
-            <input 
-              type="tel" 
-              id="tel" 
-              placeholder="Digital seu Telefone" 
-              required 
-              value={Number(telephone)}
-              onChange={e => setTelephone(e.target.value)}
-              maxLength='11'
+
+            <InputGroup
+              htmlFor="tel"
+              type="tel"
+              id="tel"
+              title="Telefone: *"
+              placeholder="Digite seu telefone"
+              required
+              value={telephone}
+              onChange={(e) => setTelephone(e.target.value)}
             />
+
             <label htmlFor="message">Deixe sua mensagem: *</label>
             <textarea
               name="message"
@@ -78,7 +85,7 @@ function Contacts() {
               required
               id="message"
               value={message}
-              onChange={e => setMessage(e.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <Button type="submit" title="Enviar" />
           </form>

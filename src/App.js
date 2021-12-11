@@ -1,10 +1,7 @@
-import './App.css';
-import Routes from "./routes"
+import "./App.css";
 
-function App() {
-  return (
-    <Routes />
-  );
-}
+import { Routes } from "./routes";
 
-export default App;
+export const App = () => {
+  return <Routes />;
+};
